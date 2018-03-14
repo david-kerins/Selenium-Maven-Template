@@ -116,6 +116,8 @@ public enum DriverType implements DriverSetup {
             chromePreferences.put("profile.password_manager_enabled", "false");
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("--no-sandbox");
+            chromeOptions.addArguments("--disable-gpu");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             capabilities.setCapability("chrome.switches", Arrays.asList("--no-default-browser-check"));
             capabilities.setCapability("chrome.prefs", chromePreferences);
