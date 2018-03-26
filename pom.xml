@@ -144,13 +144,13 @@
                             <downloadedZipFileDirectory>${project.basedir}/src/test/resources/selenium_standalone_zips</downloadedZipFileDirectory>
                             <customRepositoryMap>${project.basedir}/src/test/resources/RepositoryMap.xml</customRepositoryMap>
                             <overwriteFilesThatExist>${overwrite.binaries}</overwriteFilesThatExist>
-                            <onlyGetDriversForHostOperatingSystem>false</onlyGetDriversForHostOperatingSystem>
+                            <onlyGetDriversForHostOperatingSystem>true</onlyGetDriversForHostOperatingSystem>
                             <fileDownloadRetryAttempts>${retry.attempts}</fileDownloadRetryAttempts>
                             <fileDownloadReadTimeout>${read.timeout}</fileDownloadReadTimeout>
                             <operatingSystems>
-                                <windows>false</windows>
+                                <windows>true</windows>
                                 <linux>true</linux>
-                                <mac>false</mac>
+                                <mac>true</mac>
                             </operatingSystems>
                         </configuration>
                         <executions>
