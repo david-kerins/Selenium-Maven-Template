@@ -113,7 +113,7 @@
             <version id="0.19.1">
                 <bitrate sixtyfourbit="true">
                     <filelocation>https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz</filelocation>
-                    <hash>e7ef4eb755bbd4911594066a98dfa0401e0d58d1</hash>
+                    <hash>9284c82e1a6814ea2a63841cd532d69b87eb0d6e</hash>
                     <hashtype>sha1</hashtype>
                 </bitrate>
                 <bitrate thirtytwobit="true">
