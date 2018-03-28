@@ -38,6 +38,10 @@ public enum DriverType implements DriverSetup {
     CHROME {
         public MutableCapabilities getDesiredCapabilities(Proxy proxySettings) {
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+             // Add the WebDriver proxy capability.
+             Proxy proxy = new Proxy();
+             proxy.setHttpProxy("cooper.dmz:80");
+             capabilities.setCapability("proxy", proxy);
             capabilities.setCapability("chrome.switches", Arrays.asList("--no-default-browser-check"));
             HashMap<String, String> chromePreferences = new HashMap<String, String>();
             chromePreferences.put("profile.password_manager_enabled", "false");
@@ -118,7 +122,11 @@ public enum DriverType implements DriverSetup {
             chromeOptions.addArguments("--headless");
             chromeOptions.addArguments("--no-sandbox");
             chromeOptions.addArguments("--disable-gpu");
+            // Add the WebDriver proxy capability.
+            Proxy proxy = new Proxy();
+            proxy.setHttpProxy("cooper.dmz:80");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            capabilities.setCapability("proxy", proxy);
             capabilities.setCapability("chrome.switches", Arrays.asList("--no-default-browser-check"));
             capabilities.setCapability("chrome.prefs", chromePreferences);
             capabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
