@@ -33,29 +33,6 @@
                 </bitrate>
             </version>
         </driver>
-        <driver id="operachromium">
-            <version id="2.30">
-                <bitrate sixtyfourbit="true">
-                    <filelocation>https://github.com/operasoftware/operachromiumdriver/releases/download/v.2.30/operadriver_win64.zip</filelocation>
-                    <hash>bf80617b01708ced97f7cc174e72a1b6953ae126</hash>
-                    <hashtype>sha1</hashtype>
-                </bitrate>
-                <bitrate thirtytwobit="true">
-                    <filelocation>https://github.com/operasoftware/operachromiumdriver/releases/download/v.2.30/operadriver_win32.zip</filelocation>
-                    <hash>151dc7ae316be2ccc52c28395823c778ccfda5ac</hash>
-                    <hashtype>sha1</hashtype>
-                </bitrate>
-            </version>
-        </driver>
-        <driver id="phantomjs">
-            <version id="1.9.8">
-                <bitrate thirtytwobit="true" sixtyfourbit="true">
-                    <filelocation>https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-windows.zip</filelocation>
-                    <hash>4531bd64df101a689ac7ac7f3e11bb7e77af8eff</hash>
-                    <hashtype>sha1</hashtype>
-                </bitrate>
-            </version>
-        </driver>
         <driver id="marionette">
             <version id="0.19.1">
                 <bitrate sixtyfourbit="true">
