@@ -149,9 +149,11 @@
                             <fileDownloadReadTimeout>${read.timeout}</fileDownloadReadTimeout>
                             <operatingSystems>
                                 <windows>true</windows>
-                                <linux>true</linux>
-                                <mac>true</mac>
+                                <linux>false</linux>
+                                <mac>false</mac>
                             </operatingSystems>
+                            <!-- To specify an explicit proxy set the environment variables http.proxyHost and http.proxyPort -->
+                            <useSystemProxy>true</useSystemProxy>
                         </configuration>
                         <executions>
                             <execution>
